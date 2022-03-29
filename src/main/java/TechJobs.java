@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 /**
  * Created by LaunchCode
+ * This is the KC-CG-Oct-2021 repo
  */
 public class TechJobs {
 
@@ -136,6 +137,6 @@ public class TechJobs {
             }
         }
 
-        //System.out.println("printJobs is not implemented yet");
+        //System.out.println("printJobs is not implemented yet");  This is the KC-CG-Oct-2021 repo
     }
 }
