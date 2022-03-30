@@ -109,9 +109,9 @@ public class JobData {
 
                 Object[] keys = row.keySet().toArray();
 
-                for(int i = 0; i < keys.length; i++) {
+                for (Object key : keys) {
 
-                    String aValue = row.get(keys[i]).toLowerCase();
+                    String aValue = row.get(key).toLowerCase();
 
                     if (aValue.contains(value.toLowerCase()) && !(jobs.contains(row))) {
                         jobs.add(row);
