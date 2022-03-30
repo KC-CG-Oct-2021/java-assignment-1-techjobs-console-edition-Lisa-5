@@ -6,10 +6,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by LaunchCode
@@ -105,12 +107,17 @@ public class JobData {
 
             for (HashMap<String, String> row : allJobs) {
 
-                //for(int i = 0; i < row.size(); i++){
+                Object[] keys = row.keySet().toArray();
 
-                    if (row.containsValue(value) && !(jobs.contains(row))) {
-                            jobs.add(row);
-                        }
+                for(int i = 0; i < keys.length; i++) {
+
+                    String aValue = row.get(keys[i]).toLowerCase();
+
+                    if (aValue.contains(value.toLowerCase()) && !(jobs.contains(row))) {
+                        jobs.add(row);
                     }
+                }
+            }
 
         return jobs;
     }
