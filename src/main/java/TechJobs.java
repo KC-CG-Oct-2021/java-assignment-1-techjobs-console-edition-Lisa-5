@@ -128,12 +128,12 @@ public class TechJobs {
             for (int i = 0; i < someJobs.size(); i++) {
                 HashMap<String, String> eachJob = someJobs.get(i);
 
-                System.out.println("*****");
+                System.out.print("\n*****");
 
                 for (Map.Entry<String, String> jobProperty : eachJob.entrySet()) {
                     System.out.println(jobProperty.getKey() + ": " + jobProperty.getValue());
                 }
-                System.out.println("*****\n");
+                System.out.println("*****");
             }
         }
 
