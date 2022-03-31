@@ -125,10 +125,12 @@ public class TechJobs {
             System.out.print("No Results");
 
         } else {
+            //System.out.println();
+
             for (int i = 0; i < someJobs.size(); i++) {
                 HashMap<String, String> eachJob = someJobs.get(i);
 
-                System.out.print("\n*****");
+                System.out.println("\n*****");
 
                 for (Map.Entry<String, String> jobProperty : eachJob.entrySet()) {
                     System.out.println(jobProperty.getKey() + ": " + jobProperty.getValue());
@@ -136,7 +138,5 @@ public class TechJobs {
                 System.out.println("*****");
             }
         }
-
-        //System.out.println("printJobs is not implemented yet");  This is the KC-CG-Oct-2021 repo
     }
 }
