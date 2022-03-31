@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * Created by LaunchCode
- * This is the KC-CG-Oct-2021 repo
+ * (This is the KC-CG-Oct-2021 repo)
  */
 public class TechJobs {
 
@@ -125,7 +125,6 @@ public class TechJobs {
             System.out.print("No Results");
 
         } else {
-            //System.out.println();
 
             for (int i = 0; i < someJobs.size(); i++) {
                 HashMap<String, String> eachJob = someJobs.get(i);
