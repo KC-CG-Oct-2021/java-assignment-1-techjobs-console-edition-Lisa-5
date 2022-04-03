@@ -131,8 +131,8 @@ public class TechJobs {
 
                 System.out.println("\n*****");
 
-                for (Map.Entry<String, String> jobProperty : eachJob.entrySet()) {
-                    System.out.println(jobProperty.getKey() + ": " + jobProperty.getValue());
+                for (Map.Entry<String, String> job : eachJob.entrySet()) {
+                    System.out.println(job.getKey() + ": " + job.getValue());
                 }
                 System.out.println("*****");
             }
