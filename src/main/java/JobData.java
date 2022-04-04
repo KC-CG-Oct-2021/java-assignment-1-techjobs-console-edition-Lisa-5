@@ -61,6 +61,7 @@ public class JobData {
         //return new ArrayList<>(allJobs);
 
         return (ArrayList<HashMap<String, String>>) allJobs.clone();
+
         
     }
 

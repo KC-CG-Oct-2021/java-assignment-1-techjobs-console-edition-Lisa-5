@@ -126,8 +126,7 @@ public class TechJobs {
 
         } else {
 
-            for (int i = 0; i < someJobs.size(); i++) {
-                HashMap<String, String> eachJob = someJobs.get(i);
+            for (HashMap<String,String> eachJob : someJobs) {
 
                 System.out.println("\n*****");
 
