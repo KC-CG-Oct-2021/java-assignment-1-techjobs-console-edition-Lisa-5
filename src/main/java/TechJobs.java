@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 /**
  * Created by LaunchCode
+ * (This is the KC-CG-Oct-2021 repo)
  */
 public class TechJobs {
 
@@ -120,6 +121,20 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-        System.out.println("printJobs is not implemented yet");
+        if(someJobs.isEmpty()) {
+            System.out.print("No Results");
+
+        } else {
+
+            for (HashMap<String,String> eachJob : someJobs) {
+
+                System.out.println("\n*****");
+
+                for (Map.Entry<String, String> job : eachJob.entrySet()) {
+                    System.out.println(job.getKey() + ": " + job.getValue());
+                }
+                System.out.println("*****");
+            }
+        }
     }
 }
